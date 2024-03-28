@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="about.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Food Hub | About </title>
+</head>
+
+<body>
+
+
+    <div id="header">
+        <a href="./index.html"> <img src="./images/logo.png" alt="Food Hub" id="logo" /> </a>
+        <form class="example" action="#">
+            <input type="text" placeholder="Search.." name="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <ul>
+            <li> <a href="./index.html"> Home </a> </li>
+            <li> <a href="./menu.html"> Menu </a> </li>
+            <li> <a href="#" class="active"> About Us </a> </li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <img src="menu.png" alt="Menu" id="menuImage" onclick="myFunction()">
+
+    </div>
+    <div id="sideMenu">
+        <ul>
+            <li> <a href="./index.html" style="display:block"> Home </a> </li>
+            <li> <a href="./menu.html" style="display:block"> Menu </a> </li>
+            <li> <a href="./grocery.html" style="display:block"> Grocery </a> </li>
+            <li> <a href="./recipe.html" style="display:block"> Recipes </a> </li>
+            <li> <a href="#" class="active" style="display:block"> About </a> </li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <img src="./images/rimsha.jpg" alt="Rimsha Sajid">
+        <div class="card-data">
+            <h1 style="padding: 10px;">Rimsha Sajid</h1>
+            <p class="title">Web Developer</p>
+            <p style="text-align: justify; padding: 5px;">I am a Passionate Frontend Developer. I'm still learning
+                backend. Recently I did internship at Growintern.
+                I would like to thank full for the good experience it has given me and the lesson I learned from it.
+                Now I want start my career and looking for a job I will get it soon inshallah! </p>
+            <div style="padding: 24px 50px; display:flex; justify-content: space-evenly; margin-bottom: 20px;">
+                <a href="https://www.github.com/RIMSHASAJID436" target="_blank" id="github"><i
+                        class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/rimsha-sajid-592366292/" target="_blank" id="linkedin"><i
+                        class="fa-brands fa-linkedin" style="margin-inline: 15px;"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61551910270273" target="_blank" id="fb"
+                    style="opacity: 1;"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <p><button style="width: 200px;"> <a href="tel:+923321028741"> Contact</a></button></p>
+        </div>
+    </div>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("sideMenu");
+            var y = document.getElementById("menuImage");
+            var z = document.getElementById("menuImage").src = "close.png";
+            var a = document.getElementById("menuImage").src = "menu.png"
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.src = z;
+                y.style.width = "20px";
+                y.style.height = "20px";
+            }
+            else {
+                x.style.display = "none";
+                y.src = a;
+                y.style.width = "20px";
+                y.style.height = "20px";
+            }
+        }
+    </script>
+</body>
+
+</html>
