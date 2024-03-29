@@ -18,21 +18,21 @@
           </form>
           
         <ul>
-            <li> <a href="#" class="active"> Home </a> </li>
+            <li> <a href="index.html" class="active"> Home </a> </li>
             <li> <a href="./menu.html" > Menu </a> </li>
             <li> <a href="./about.html"> About Us</a> </li>
             <li><a href="contact.html">Contact Us</a></li>
 
         </ul>
-        <img src="menu.png" alt="Menu" id="menuImage" onclick="myFunction()">
+        <img src="./images/menu.png" alt="Menu" id="menuImage" onclick="myFunction()">
         
     </div>
 
     <div id="sideMenu">
         <ul>
-            <li> <a href="#" class="active" style="display:block"> Home </a> </li> 
-            <li> <a href="./menu.html" style="display:block"> Menu </a> </li> 
-            <li> <a href="./about.html" style="display:block"> About Us </a> </li> 
+            <li> <a href="index.html" class="active" style="display:block"> Home </a> </li> 
+            <li> <a href="menu.html" style="display:block"> Menu </a> </li> 
+            <li> <a href="about.html" style="display:block"> About Us </a> </li> 
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </div>
@@ -71,6 +71,26 @@
             <img src="./images/huawai-icon.png"  height="40px" alt="">
         </div>
     </div>
-   
+    <script>
+        function myFunction(){
+            var x= document.getElementById("sideMenu");
+            var y=document.getElementById("menuImage");
+            var z=document.getElementById("menuImage").src = "./images/menu.png";
+            var a=document.getElementById("menuImage").src = "./images/menu.png"
+            if (x.style.display === "none"){
+                x.style.display = "block";
+                y.src = z;
+                y.style.width="20px";
+                y.style.height="20px";
+        
+            }
+            else{
+                x.style.display = "none";
+                y.src = a;
+                y.style.width="20px";
+                y.style.height="20px";
+            }
+        }
+        </script>
 </body>
 </html>

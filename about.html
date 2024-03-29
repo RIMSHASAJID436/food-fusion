@@ -23,16 +23,16 @@
             <li> <a href="#" class="active"> About Us </a> </li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
-        <img src="menu.png" alt="Menu" id="menuImage" onclick="myFunction()">
+        <img src="./images/menu.png" alt="Menu" id="menuImage" onclick="myFunction()">
 
     </div>
     <div id="sideMenu">
         <ul>
-            <li> <a href="./index.html" style="display:block"> Home </a> </li>
-            <li> <a href="./menu.html" style="display:block"> Menu </a> </li>
-            <li> <a href="./grocery.html" style="display:block"> Grocery </a> </li>
-            <li> <a href="./recipe.html" style="display:block"> Recipes </a> </li>
-            <li> <a href="#" class="active" style="display:block"> About </a> </li>
+            <li> <a href="index.html" style="display:block"> Home </a> </li>
+            <li> <a href="menu.html" style="display:block"> Menu </a> </li>
+            <li> <a href="#" class="active" style="display:block"> About Us </a> </li>
+            <li><a href="contact.html">Contact Us</a></li>
+
         </ul>
     </div>
 
@@ -62,8 +62,8 @@
         function myFunction() {
             var x = document.getElementById("sideMenu");
             var y = document.getElementById("menuImage");
-            var z = document.getElementById("menuImage").src = "close.png";
-            var a = document.getElementById("menuImage").src = "menu.png"
+            var z=document.getElementById("menuImage").src = "./images/menu.png";
+            var a=document.getElementById("menuImage").src = "./images/menu.png"
             if (x.style.display === "none") {
                 x.style.display = "block";
                 y.src = z;

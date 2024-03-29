@@ -77,7 +77,7 @@
             <li><a href="contact.html">Contact Us</a></li>
 
         </ul>
-        <img src="menu.png" alt="Menu" id="menuImage" onclick="myFunction()">
+        <img src="./images/menu.png" alt="Menu" id="menuImage" onclick="myFunction()">
         
     </div>
 
@@ -144,8 +144,8 @@
 function myFunction(){
     var x= document.getElementById("sideMenu");
     var y=document.getElementById("menuImage");
-    var z=document.getElementById("menuImage").src = "close.png";
-    var a=document.getElementById("menuImage").src = "menu.png"
+    var z=document.getElementById("menuImage").src = "./images/menu.png";
+            var a=document.getElementById("menuImage").src = "./images/menu.png"
     if (x.style.display === "none"){
         x.style.display = "block";
         y.src = z;
